@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+        <!-- Replace the content tag with appropriate information -->
+        <meta
+            name="description"
+            content="CLAIR: a (surprisingly simple) large language model-based measure for image caption evaluation,
+        where we ask a language model to directly predict the similarity score between a candidate and
+        reference. We find that CLAIR not only correlates strongly with human judgments of caption
+        quality but can also generate interpretable reasons for the generated scores."
+        />
+        <meta property="og:title" content="CLAIR: Evaluating Image Captions with Large Language Models" />
+        <meta
+            property="og:description"
+            content="CLAIR: a (surprisingly simple) large language model-based measure for image caption evaluation,
+        where we ask a language model to directly predict the similarity score between a candidate and
+        reference. We find that CLAIR not only correlates strongly with human judgments of caption
+        quality but can also generate interpretable reasons for the generated scores."
+        />
+        <!-- <meta property="og:url" content="URL OF THE WEBSITE" /> -->
+        <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+        <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" /> -->
+
+        <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+        <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG" /> -->
+        <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+        <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png" />
+        <meta name="twitter:card" content="summary_large_image" /> -->
+        <!-- Keywords for your paper to be indexed by-->
+        <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>CLAIR: Evaluating Image Captions with Large Language Models</title>
+        <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+        <link rel="stylesheet" href="static/css/bulma.min.css" />
+        <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+        <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+        <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+        <link rel="stylesheet" href="static/css/index.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+        <script defer src="static/js/fontawesome.all.min.js"></script>
+        <script src="static/js/bulma-carousel.min.js"></script>
+        <script src="static/js/bulma-slider.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">
+                                CLAIR: Evaluating Image Captions with Large Language Models
+                            </h1>
+                            <div class="is-size-5 publication-authors">
+                                <!-- Paper authors -->
+                                <span class="author-block">
+                                    <a href="https://dchan.cc" target="_blank">David M. Chan</a>,</span
+                                >
+                                <span class="author-block"> <a href="/" target="_blank">Suzanne Petryk</a>,</span>
+                                <span class="author-block">
+                                    <a href="/" target="_blank">Joseph E. Gonzalez</a>
+                                </span>
+                                <span class="author-block">
+                                    <a href="/" target="_blank">Trevor Darrell</a>
+                                </span>
+                                <span class="author-block">
+                                    <a href="/" target="_blank">John Canny</a>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block"
+                                    >University of California, Berkeley<br />The 2023 Conference on Empirical Methods in
+                                    Natural Language Processing (EMNLP)</span
+                                >
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- Arxiv PDF link -->
+                                    <span class="link-block">
+                                        <a
+                                            href="static/pdfs/_EMNLP_2023__CLAIR__Language_Models_for_Caption_Evaluation.pdf"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+
+                                    <!-- Github link -->
+                                    <span class="link-block">
+                                        <a
+                                            href="https://github.com/davidmchan/clair"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Code</span>
+                                        </a>
+                                    </span>
+
+                                    <!-- ArXiv abstract Link -->
+                                    <!-- <span class="link-block">
+                                        <a
+                                            href="https://arxiv.org/abs/<ARXIV PAPER ID>"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser video-->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                    <img
+                        src="static/images/fig1.png"
+                        style="
+                            max-height: 400px;
+                            text-align: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
+                        "
+                        alt="Teaser image"
+                    />
+                    <h2 class="subtitle has-text-centered">
+                        CLAIR: a (surprisingly simple) large language model-based measure for image caption evaluation,
+                        where we ask a language model to directly predict the similarity score between a candidate and
+                        reference. We find that CLAIR not only correlates strongly with human judgments of caption
+                        quality but can also generate interpretable reasons for the generated scores.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- End teaser video -->
+
+        <!-- Paper abstract -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                The evaluation of machine-generated image captions poses an interesting yet persistent
+                                challenge. Effective evaluation measures must consider numerous dimensions of
+                                similarity, including semantic relevance, visual structure, object interactions, caption
+                                diversity, and specificity. Existing highly-engineered measures attempt to capture
+                                specific aspects, but fall short in providing a holistic score that aligns closely with
+                                human judgments. Here, we propose CLAIR, a novel method that leverages the zero-shot
+                                language modeling capabilities of large language models (LLMs) to evaluate candidate
+                                captions. In our evaluations, CLAIR demonstrates a stronger correlation with human
+                                judgments of caption quality compared to existing measures. Notably, on Flickr8K-Expert,
+                                CLAIR achieves relative correlation improvements over SPICE of 39.6% and over
+                                image-augmented methods such as RefCLIP-S of 18.3%. Moreover, CLAIR provides noisily
+                                interpretable results by allowing the language model to identify the underlying
+                                reasoning behind its assigned score.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End paper abstract -->
+
+        <!-- Paper poster -->
+        <!-- <section class="hero is-small is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h2 class="title">Poster</h2>
+
+                    <iframe src="static/pdfs/sample.pdf" width="100%" height="550"> </iframe>
+                </div>
+            </div>
+        </section> -->
+        <!--End paper poster -->
+
+        <!--BibTex citation -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+                <pre><code>@inproceedings{chan-etal-2023-clair-evaluating,
+    title = "CLAIR: Evaluating Image Captions with Large Language Models",
+    author = "Chan, David M and
+        Petryk, Suzanne and
+        Gonzalez, Joseph E and
+        Darrell, Trevor and
+        Canny, John",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore, Singapore",
+    publisher = "Association for Computational Linguistics",
+}</code></pre>
+            </div>
+        </section>
+        <!--End BibTex citation -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This page was built using the
+                                <a
+                                    href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                    target="_blank"
+                                    >Academic Project Page Template</a
+                                >
+                                which was adopted from the <a href="https://nerfies.github.io" target="_blank"
+                                    >Nerfies</a
+                                > project page. You are free to borrow the of this website, we just ask that you link
+                                back to this page in the footer. <br />
+                                This website is licensed under a
+                                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                                    >Creative Commons Attribution-ShareAlike 4.0 International License</a
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Statcounter tracking code -->
+
+        <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+        <!-- End of Statcounter Code -->
+    </body>
+</html>
