@@ -86,3 +86,23 @@ From AllenAI (via Huggingface)
 From AI21
 
 -   Jurassic 2 (Light, Mid, Ultra) (Completion Engines)
+
+## Citation
+
+If you find this repository useful, please cite our paper:
+
+```bibtex
+@inproceedings{chan-etal-2023-clair-evaluating,
+    title = "CLAIR: Evaluating Image Captions with Large Language Models",
+    author = "Chan, David M and
+        Petryk, Suzanne and
+        Gonzalez, Joseph E and
+        Darrell, Trevor and
+        Canny, John",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore, Singapore",
+    publisher = "Association for Computational Linguistics",
+}
+```
