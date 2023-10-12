@@ -1,8 +1,9 @@
 # CLAIR: A (Surprisingly) simple semantic text metric leveraging large language models.
 
-### [Project](https://davidmchan.github.io/clair/) | [Paper](https://davidmchan.github.io/clair/static/pdfs/_EMNLP_2023__CLAIR__Language_Models_for_Caption_Evaluation.pdf) <br>
+### [Project](https://davidmchan.github.io/clair/) | [Paper](https://davidmchan.github.io/clair/static/pdfs/_EMNLP_2023__CLAIR__Language_Models_for_Caption_Evaluation.pdf)
 
 Official implementation of the paper: "CLAIR: Evaluating Image Captions with Large Language Models".
+<br>
 
 The evaluation of machine-generated image captions poses an interesting yet persistent challenge. Effective evaluation measures must consider numerous dimensions of similarity, including semantic relevance, visual structure, object interactions, caption diversity, and specificity. Existing highly-engineered measures attempt to capture specific aspects, but fall short in providing a holistic score that aligns closely with human judgments. Here, we propose CLAIR, a novel method that leverages the zero-shot language modeling capabilities of large language models (LLMs) to evaluate candidate captions. In our evaluations, CLAIR demonstrates a stronger correlation with human judgments of caption quality compared to existing measures. Notably, on Flickr8K-Expert, CLAIR achieves relative correlation improvements over SPICE of 39.6% and over image-augmented methods such as RefCLIP-S of 18.3%. Moreover, CLAIR provides noisily interpretable results by allowing the language model to identify the underlying reasoning behind its assigned score.
 
